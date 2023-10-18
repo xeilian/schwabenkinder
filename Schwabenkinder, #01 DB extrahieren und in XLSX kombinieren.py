@@ -1,3 +1,5 @@
+#01 | DATEN AUS SCHWABENKINDER-DB HERUNTERLADEN UND IN EINER EXCEL-TABELLE KOMBINIEREN
+
 import requests
 import os
 import pandas as pd
@@ -9,16 +11,16 @@ download_folder = "D:\schwabenkinder"
 url_template = "https://www.schwabenkinder.eu/de/Datenbank/datenbank-suche/export/xls/{}"
 
 num_files = 7000  # Anzahl der herunterzuladenden Dateien
-#for i in range(1, num_files + 1):
-    #url = url_template.format(i)
-    #filename = os.path.join(download_folder, f"datei_{i}.xls")
-    #response = requests.get(url)
-    #if response.status_code == 200:
-        #with open(filename, "wb") as file:
-            #file.write(response.content)
-        #print(f"Datei {i} heruntergeladen.")
-    #else:
-        #print(f"Fehler beim Herunterladen der Datei {i}.")
+for i in range(1, num_files + 1):
+    url = url_template.format(i)
+    filename = os.path.join(download_folder, f"datei_{i}.xls")
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(filename, "wb") as file:
+            file.write(response.content)
+        print(f"Datei {i} heruntergeladen.")
+    else:
+        print(f"Fehler beim Herunterladen der Datei {i}.")
 
 # Schritt 2: Kombinieren der Daten
 # Ordnerpfad mit den XLS-Dateien

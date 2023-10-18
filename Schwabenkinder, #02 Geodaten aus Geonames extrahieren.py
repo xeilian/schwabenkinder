@@ -1,3 +1,5 @@
+#02 | GEODATEN I: DATEN AUS GEONAMES EXTRAHIEREN
+
 import pandas as pd
 import requests
 
@@ -47,7 +49,7 @@ def query_geonames_api(place):
 # Schleife über die Datensätze in der Excel-Datei
 for index, row in data.iterrows():
     place1 = row[0]  # Verwende Spalte B
-    #place2 = row[2]  # Verwende Spalte C
+    place2 = row[2]  # Verwende Spalte C
 
     # Überprüfen, ob Ort 1 bereits abgefragt wurde
     if pd.notnull(place1) and pd.isnull(row[3]):  # Überprüfe Spalte D
@@ -69,23 +71,23 @@ for index, row in data.iterrows():
             queried_places.append(place1)
 
     # Überprüfen, ob Ort 2 bereits abgefragt wurde
-    #if pd.notnull(place2) and pd.isnull(row[8]):  # Überprüfe Spalte I
-        #result2 = query_geonames_api(place2)
-        #api_requests += 1
+    if pd.notnull(place2) and pd.isnull(row[8]):  # Überprüfe Spalte I
+        result2 = query_geonames_api(place2)
+        api_requests += 1
 
-        #if result2 is not None:
+        if result2 is not None:
             # Ergebnisse in die Excel-Datei eintragen
-            #data.at[index, 'Spalte I'] = result2['adminname1']  # Spalte I
-            #data.at[index, 'Spalte J'] = result2['lat']  # Spalte J
-            #data.at[index, 'Spalte K'] = result2['lng']  # Spalte K
-            #data.at[index, 'Spalte L'] = result2['population']  # Spalte L
-            #data.at[index, 'Spalte M'] = result2['toponym_name']  # Spalte M
-            #fill_count += 1
-            #print(f'Auffüllung für {place2} abgeschlossen')
-            #print(f'Auffüllungen: {fill_count} / API-Abfragen: {api_requests}')
+            data.at[index, 'Spalte I'] = result2['adminname1']  # Spalte I
+            data.at[index, 'Spalte J'] = result2['lat']  # Spalte J
+            data.at[index, 'Spalte K'] = result2['lng']  # Spalte K
+            data.at[index, 'Spalte L'] = result2['population']  # Spalte L
+            data.at[index, 'Spalte M'] = result2['toponym_name']  # Spalte M
+            fill_count += 1
+            print(f'Auffüllung für {place2} abgeschlossen')
+            print(f'Auffüllungen: {fill_count} / API-Abfragen: {api_requests}')
 
             # Ort zur Liste der bereits abgefragten Orte hinzufügen
-            #queried_places.append(place2)
+            queried_places.append(place2)
 
 # Ergebnisse in eine neue Excel-Datei schreiben
 data.to_excel('D:\schwabenkinder\Mappe6-2.xlsx', index=False)

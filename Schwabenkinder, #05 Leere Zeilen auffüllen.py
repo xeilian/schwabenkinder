@@ -1,3 +1,5 @@
+#05 | LEERE ZEILEN AUFFÜLLEN
+
 import pandas as pd
 
 # Pfad zur Excel-Datei
