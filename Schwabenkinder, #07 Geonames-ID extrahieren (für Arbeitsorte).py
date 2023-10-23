@@ -1,4 +1,5 @@
-# 06 | GEONAMES-ID EXTRAHIEREN
+#06 | GEONAMES-ID EXTRAHIEREN (FÜR HERKUNFTSORTE)
+#Voraussetzung: Excel-Tabelle mit drei Spalten. A = Name, B = Land, C = ADM-Code 1 --> Code legt ID via API in D ab
 
 import pandas as pd
 import requests
@@ -17,6 +18,7 @@ def query_geonames_api(place, country, adm1):
         "country": country,
         "adminCode1": adm1,
         "maxRows": 1,
+        "featureCode": "P",
         "username": api_key
     }
 
@@ -40,7 +42,8 @@ def query_geonames_api(place, country, adm1):
 for index, row in data.iterrows():
     place = row[0]  # Verwende Spalte A
     country = row[1]  # Verwende Spalte B
-    adm1 = (row[2])  # Verwende Spalte C
+    adm1 = "0"+(row[2])  # Verwende Spalte C
+
 
     # Überprüfen, ob alle benötigten Informationen vorhanden sind
     if pd.notnull(place) and pd.notnull(country) and pd.notnull(adm1):
