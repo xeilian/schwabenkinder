@@ -6,12 +6,13 @@ import requests
 
 # Lese die Excel-Datei
 data = pd.read_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name='Tabelle1')
+endpoint = 'http://api.geonames.org/searchJSON'
+counter = 0
+api_key_index = 0
+api_keys = ['xeilian', 'code', 'brain', 'world', 'six', 'power', 'cool', 'help', 'jackie', 'nice', 'mind', 'sing', 'dive', 'time', 'money', 'california', 'doggy', 'free', 'bird', 'radio', 'swift', 'brian', 'heavy', 'value', 'stop', 'happy', 'moin', 'light']
 
 # Funktion zum Abfragen der Geonames API
 def query_geonames_api(place, country, adm1):
-    endpoint = 'http://api.geonames.org/searchJSON'
-    api_key = 'xeilian'
-
     # API-Anfrage senden
     params = {
         "q": place,
@@ -19,7 +20,7 @@ def query_geonames_api(place, country, adm1):
         "adminCode1": adm1,
         "maxRows": 1,
         "featureClass": "P",
-        "username": api_key
+        "username": api_keys[api_key_index]
     }
 
     print(place, country, adm1)
@@ -40,9 +41,18 @@ def query_geonames_api(place, country, adm1):
 
 # Schleife über die Datensätze in der Excel-Datei
 for index, row in data.iterrows():
-    place = row.iloc[1]  # Verwende Spalte B
-    country = row.iloc[2]  # Verwende Spalte C
-    adm1 = "0" + str(int(row.iloc[3]))  # Verwende Spalte D
+    place = row.iloc[2]
+    country = row.iloc[3]
+    test = row.iloc[5]
+
+    if country == "AT" or country == "DE":
+        adm1 = "0" + str(int(row.iloc[4]))
+    elif country == "CH" or country == "IT" or country == "LI":
+        adm1 = str(row.iloc[4])
+    elif pd.isnull(country):
+        pass
+    elif pd.notnull(test):
+        pass
 
     # Überprüfen, ob alle benötigten Informationen vorhanden sind
     if pd.notnull(place) and pd.notnull(country) and pd.notnull(adm1):
@@ -51,8 +61,13 @@ for index, row in data.iterrows():
 
         if result is not None:
             # Ergebnisse in die Excel-Datei eintragen
-            data.loc[index, 'Spalte D'] = str(result)
+           data.loc[index, 'Spalte F'] = str(result)
 
+    counter += 1
+    print(counter)
+
+    if counter & 900 == 0:
+        api_key_index = (api_key_index + 1) % len(api_keys)
 
 # Ergebnisse in eine neue Excel-Datei schreiben
 data.to_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name="Tabelle1", index=False)

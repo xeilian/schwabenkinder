@@ -7,11 +7,16 @@ import json
 
 # Lese die Excel-Datei
 data = pd.read_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_bool.xlsx", sheet_name='Tabelle1')
+counter = 0
+counter_apikey = int(counter/900)
+
 
 # Funktion zum Abfragen der Geonames API
 def query_geonames_api(geoname_id):
     endpoint = 'http://api.geonames.org/hierarchyJSON'
-    api_key = 'xeilian'
+    api_keys = ['xeilian', 'code', 'brain', 'world', 'six', 'power', 'cool', 'help', 'jackie', 'nice', 'swift', 'brian',
+                'heavy', 'value', 'stop', 'happy', 'moin', 'light']
+    api_key = api_keys[counter_apikey]
 
     # API-Anfrage senden
     params = {
@@ -47,6 +52,8 @@ for index, row in data.iterrows():
         if result is not None:
             # Ergebnisse in die Excel-Datei eintragen
             data.loc[index, 'Spalte B'] = result
+
+    counter += 1
 
 # Ergebnisse in eine neue Excel-Datei schreiben
 data.to_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_bool.xlsx", sheet_name="Tabelle1", index=False)

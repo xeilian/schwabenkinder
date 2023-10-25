@@ -7,16 +7,17 @@ import json
 
 # Lese die Excel-Datei
 data = pd.read_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name='Tabelle1')
+endpoint = 'http://api.geonames.org/hierarchyJSON'
+counter = 0
+api_key_index = 0
+api_keys = ['brain', 'world', 'six', 'power', 'cool', 'help', 'jackie', 'nice', 'mind', 'sing', 'dive', 'time', 'money', 'california', 'doggy', 'free', 'bird', 'radio', 'swift', 'brian', 'heavy', 'value', 'stop', 'happy', 'moin', 'light']
 
 # Funktion zum Abfragen der Geonames API
 def query_geonames_api(geoname_id):
-    endpoint = 'http://api.geonames.org/hierarchyJSON'
-    api_key = 'power'
-
-    # API-Anfrage senden
+        # API-Anfrage senden
     params = {
         "geonameId": geoname_id,
-        "username": api_key
+        "username": api_keys[api_key_index]
     }
 
     print(geoname_id)
@@ -54,10 +55,11 @@ def query_geonames_api(geoname_id):
 
 # Schleife über die Datensätze in der Excel-Datei
 for index, row in data.iterrows():
-    geoname_id = int(row.iloc[2])  # Verwende Spalte C
+    geoname_id = row.iloc[5]  # Verwende Spalte F
 
     # Überprüfen, ob alle benötigten Informationen vorhanden sind
-    if pd.notnull(geoname_id):
+    if geoname_id is not None and not pd.isnull(geoname_id) and str(geoname_id).strip() != '':
+        geoname_id = int(geoname_id)
         result = query_geonames_api(geoname_id)
         print(result)
 
@@ -65,6 +67,14 @@ for index, row in data.iterrows():
             # Ergebnisse in die Excel-Datei eintragen
             for column_name in result.keys():
                 data.loc[index, column_name] = json.dumps(result[column_name])
+    else:
+        pass
+
+    counter += 1
+    print(counter)
+
+    if counter & 900 == 0:
+        api_key_index = (api_key_index + 1) % len(api_keys)
 
 # Ergebnisse in eine neue Excel-Datei schreiben
 data.to_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name="Tabelle1", index=False)

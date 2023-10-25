@@ -6,11 +6,17 @@ import requests
 
 # Lese die Excel-Datei
 data = pd.read_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name='Tabelle1')
+endpoint = 'http://api.geonames.org/searchJSON'
+counter = 0
+api_key_index = 0
+api_keys = ['xeilian', 'code', 'brain', 'world', 'six', 'power', 'cool', 'help', 'jackie', 'nice', 'mind', 'sing', 'dive', 'time', 'money', 'california', 'doggy', 'free', 'bird', 'radio', 'swift', 'brian', 'heavy', 'value', 'stop', 'happy', 'moin', 'light']
 
 # Funktion zum Abfragen der Geonames API
 def query_geonames_api(place, country, adm1):
     endpoint = 'http://api.geonames.org/searchJSON'
-    api_key = 'code'
+    api_keys = ['xeilian', 'code', 'brain', 'world', 'six', 'power', 'cool', 'help', 'jackie', 'nice', 'swift', 'brian',
+                'heavy', 'value', 'stop', 'happy', 'moin', 'light']
+    api_key = api_keys[api_key_index]
 
     # API-Anfrage senden
     params = {
@@ -52,6 +58,12 @@ for index, row in data.iterrows():
         if result is not None:
             # Ergebnisse in die Excel-Datei eintragen
             data.loc[index, "Spalte D"] = str(result)
+
+    counter += 1
+    print(counter)
+
+    if counter & 900 == 0:
+        api_key_index = (api_key_index + 1) % len(api_keys)
 
 # Ergebnisse in eine neue Excel-Datei schreiben
 data.to_excel(f"D:\schwabenkinder\schwabenkinder_dok_admex_a.xlsx", sheet_name="Tabelle1", index=False)
