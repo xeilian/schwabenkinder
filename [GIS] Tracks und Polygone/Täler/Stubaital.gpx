@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-27T13:01:00Z</time></metadata><trk><name>Stubaital</name><desc>name=Stubaital
+natural=valley
+wikidata=Q689532
+wikipedia=de:Stubaital</desc><link href="http://osm.org/browse/way/925622613"/><trkseg><trkpt lat="47.103253" lon="11.2919921"/><trkpt lat="47.1063252" lon="11.2952756"/><trkpt lat="47.1116411" lon="11.3154887"/><trkpt lat="47.1295712" lon="11.3334273"/><trkpt lat="47.1376874" lon="11.3388776"/><trkpt lat="47.1427375" lon="11.3408517"/><trkpt lat="47.1481082" lon="11.3517093"/><trkpt lat="47.1583372" lon="11.3596058"/><trkpt lat="47.169352" lon="11.3715791"/><trkpt lat="47.1883126" lon="11.3957405"/></trkseg></trk></gpx>

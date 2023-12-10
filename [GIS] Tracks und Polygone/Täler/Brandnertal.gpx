@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-26T22:13:00Z</time></metadata><trk><name>Brandnertal</name><desc>alt_name=Brandner Tal
+name=Brandnertal
+name:de=Brandnertal
+natural=valley
+wikidata=Q898092
+wikipedia=de:Brandnertal</desc><link href="http://osm.org/browse/way/584733577"/><trkseg><trkpt lat="47.1542961" lon="9.8091768"/><trkpt lat="47.1383442" lon="9.7804928"/><trkpt lat="47.1346951" lon="9.7799456"/><trkpt lat="47.1279945" lon="9.7738194"/><trkpt lat="47.1250175" lon="9.7690946"/><trkpt lat="47.119176" lon="9.7578764"/><trkpt lat="47.1134984" lon="9.7465833"/><trkpt lat="47.1132612" lon="9.7462268"/><trkpt lat="47.112466" lon="9.7449133"/><trkpt lat="47.0998402" lon="9.737041"/><trkpt lat="47.090179" lon="9.7346288"/><trkpt lat="47.0856933" lon="9.7375138"/><trkpt lat="47.0836942" lon="9.7368709"/><trkpt lat="47.0808917" lon="9.7362326"/><trkpt lat="47.0793015" lon="9.7358083"/><trkpt lat="47.0766051" lon="9.7378224"/><trkpt lat="47.0743308" lon="9.7441864"/><trkpt lat="47.0704434" lon="9.7525549"/><trkpt lat="47.0687645" lon="9.7535205"/><trkpt lat="47.0666854" lon="9.7542795"/></trkseg></trk></gpx>

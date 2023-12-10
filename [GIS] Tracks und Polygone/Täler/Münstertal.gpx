@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-27T13:15:15Z</time></metadata><trk><name>Val Müstair</name><desc>name=Val Müstair
+name:de=Münstertal
+name:fr=Val Müstair
+name:it=Val Monastero
+name:rm=Val Müstair
+natural=valley
+wikidata=Q257965
+wikipedia=de:Münstertal (Alpental)</desc><link href="http://osm.org/browse/way/568532121"/><trkseg><trkpt lat="46.6728811" lon="10.5350302"/><trkpt lat="46.6627504" lon="10.499153"/><trkpt lat="46.6457536" lon="10.4746913"/><trkpt lat="46.6328184" lon="10.4591131"/><trkpt lat="46.6239181" lon="10.4514312"/><trkpt lat="46.6139551" lon="10.4449939"/><trkpt lat="46.6049338" lon="10.4260683"/><trkpt lat="46.6028699" lon="10.4177427"/><trkpt lat="46.6011892" lon="10.4110854"/><trkpt lat="46.6045505" lon="10.3908348"/><trkpt lat="46.6080885" lon="10.3811359"/><trkpt lat="46.6098736" lon="10.376763"/><trkpt lat="46.6184063" lon="10.3558588"/><trkpt lat="46.6289726" lon="10.3288007"/><trkpt lat="46.6335845" lon="10.3077078"/><trkpt lat="46.6383435" lon="10.2949834"/></trkseg></trk></gpx>

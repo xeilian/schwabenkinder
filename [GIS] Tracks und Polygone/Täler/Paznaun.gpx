@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-27T12:53:45Z</time></metadata><trk><name>Paznaun</name><desc>alt_name=Paznauntal
+name=Paznaun
+name:rm=Pozignun
+natural=valley
+wikidata=Q667931</desc><link href="http://osm.org/browse/way/395060708"/><trkseg><trkpt lat="46.9196277" lon="10.1096662"/><trkpt lat="46.9348563" lon="10.1330829"/><trkpt lat="46.9537267" lon="10.1516319"/><trkpt lat="46.9612423" lon="10.1540956"/><trkpt lat="46.9656489" lon="10.1635312"/><trkpt lat="46.9682557" lon="10.1864233"/><trkpt lat="46.9796895" lon="10.2154762"/><trkpt lat="46.9867718" lon="10.238699"/><trkpt lat="46.9919832" lon="10.2557889"/><trkpt lat="47.0468301" lon="10.3422877"/><trkpt lat="47.0673887" lon="10.3955086"/><trkpt lat="47.0776884" lon="10.4549384"/><trkpt lat="47.0985308" lon="10.4868824"/><trkpt lat="47.1166814" lon="10.4893308"/></trkseg></trk></gpx>

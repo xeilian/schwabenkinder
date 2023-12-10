@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-26T22:13:00Z</time></metadata><trk><name>Kleinwalsertal</name><desc>alt_name:de=Kleines Walsertal
+name=Kleinwalsertal
+name:de=Kleinwalsertal
+natural=valley
+wikipedia=de:Kleinwalsertal</desc><link href="http://osm.org/browse/way/584739471"/><trkseg><trkpt lat="47.3877161" lon="10.2272415"/><trkpt lat="47.3611894" lon="10.1847553"/><trkpt lat="47.3559202" lon="10.1791119"/><trkpt lat="47.3471831" lon="10.1739836"/><trkpt lat="47.3284248" lon="10.1645865"/><trkpt lat="47.3224906" lon="10.1609695"/><trkpt lat="47.313748" lon="10.1462173"/><trkpt lat="47.3097908" lon="10.1191592"/></trkseg></trk></gpx>

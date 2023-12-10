@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-26T22:11:57Z</time></metadata><trk><name>Walgau</name><desc>name=Walgau
+name:de=Walgau
+name:uk=Вальґау
+natural=valley
+wikidata=Q259980
+wikipedia=de:Walgau</desc><link href="http://osm.org/browse/way/584212501"/><trkseg><trkpt lat="47.2319209" lon="9.6011564"/><trkpt lat="47.2305674" lon="9.604351"/><trkpt lat="47.2291196" lon="9.6055445"/><trkpt lat="47.2280182" lon="9.6077899"/><trkpt lat="47.2242617" lon="9.6389485"/><trkpt lat="47.2126247" lon="9.6588991"/><trkpt lat="47.2008606" lon="9.6856528"/><trkpt lat="47.1938669" lon="9.7327728"/><trkpt lat="47.1738565" lon="9.7711225"/><trkpt lat="47.1658018" lon="9.7996307"/><trkpt lat="47.1542961" lon="9.8091768"/><trkpt lat="47.1437218" lon="9.8301271"/><trkpt lat="47.1358674" lon="9.8356463"/></trkseg></trk></gpx>

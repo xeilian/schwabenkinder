@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-11-26T22:11:57Z</time></metadata><trk><name>Großes Walsertal</name><desc>name=Großes Walsertal
+name:de=Großes Walsertal
+name:en=Great Walser Valley
+name:uk=Гросс-Вальцерталь
+natural=valley
+wikidata=Q1549221
+wikipedia=de:Großes Walsertal</desc><link href="http://osm.org/browse/way/582994462"/><trkseg><trkpt lat="47.1938669" lon="9.7327728"/><trkpt lat="47.2149164" lon="9.7872178"/><trkpt lat="47.2189289" lon="9.8031532"/><trkpt lat="47.2197937" lon="9.8160151"/><trkpt lat="47.2232193" lon="9.830386"/><trkpt lat="47.2323931" lon="9.8823944"/><trkpt lat="47.2395538" lon="9.9004006"/><trkpt lat="47.242908" lon="9.9100003"/><trkpt lat="47.2419732" lon="9.9314882"/><trkpt lat="47.2442906" lon="9.9480123"/><trkpt lat="47.2460054" lon="9.9652201"/></trkseg></trk></gpx>
