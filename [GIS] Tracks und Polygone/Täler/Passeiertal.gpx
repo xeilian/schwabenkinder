@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-12-22T15:55:30Z</time></metadata><trk><name>Passeiertal - Val Passiria</name><desc>name=Passeiertal - Val Passiria
+name:de=Passeiertal
+name:it=Val Passiria
+natural=valley
+wikidata=Q525626
+wikipedia=it:Val Passiria</desc><link href="http://osm.org/browse/way/338449041"/><trkseg><trkpt lat="46.8120138" lon="11.2432535"/><trkpt lat="46.7951469" lon="11.2333374"/><trkpt lat="46.7825973" lon="11.225456"/><trkpt lat="46.7644789" lon="11.2134811"/><trkpt lat="46.754978" lon="11.2093266"/><trkpt lat="46.7469406" lon="11.2074937"/><trkpt lat="46.7465616" lon="11.2073789"/><trkpt lat="46.7394045" lon="11.2038279"/><trkpt lat="46.7327048" lon="11.2006509"/><trkpt lat="46.7244128" lon="11.1961298"/><trkpt lat="46.7146116" lon="11.1920975"/><trkpt lat="46.6999482" lon="11.1847659"/><trkpt lat="46.6892205" lon="11.1776788"/></trkseg></trk></gpx>

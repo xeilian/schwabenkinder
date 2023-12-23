@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" version="1.1" creator="overpass-turbo">
+<metadata>
+    <name>Fleimstal II</name>
+    <author>
+        <name>gpx.studio</name>
+        <link href="https://gpx.studio"></link>
+    </author>
+</metadata>
+<trk>
+    <name>Val di Fiemme</name>
+    <type>Cycling</type>
+    <trkseg>
+    <trkpt lat="46.2662911" lon="11.4015766">
+        <ele>784.0</ele>
+    </trkpt>
+    <trkpt lat="46.2725802" lon="11.4197729">
+        <ele>805.7</ele>
+    </trkpt>
+    <trkpt lat="46.2817162" lon="11.4539334">
+        <ele>887.1</ele>
+    </trkpt>
+    <trkpt lat="46.2860758" lon="11.5105816">
+        <ele>904.3</ele>
+    </trkpt>
+    <trkpt lat="46.2860758" lon="11.5105816">
+        <ele>904.3</ele>
+    </trkpt>
+    <trkpt lat="46.286224" lon="11.5418242">
+        <ele>978.1</ele>
+    </trkpt>
+    <trkpt lat="46.2877662" lon="11.5644835">
+        <ele>956.6</ele>
+    </trkpt>
+    <trkpt lat="46.2916578" lon="11.5760509">
+        <ele>984.8</ele>
+    </trkpt>
+    <trkpt lat="46.2976111" lon="11.5857695">
+        <ele>971.2</ele>
+    </trkpt>
+    <trkpt lat="46.3059128" lon="11.5929791">
+        <ele>992.7</ele>
+    </trkpt>
+    <trkpt lat="46.3314027" lon="11.6036221">
+        <ele>1062.4</ele>
+    </trkpt>
+    <trkpt lat="46.3520228" lon="11.6307448">
+        <ele>1109.8</ele>
+    </trkpt>
+    <trkpt lat="46.3661828" lon="11.650507">
+        <ele>1159.9</ele>
+    </trkpt>
+    </trkseg>
+</trk>
+</gpx>

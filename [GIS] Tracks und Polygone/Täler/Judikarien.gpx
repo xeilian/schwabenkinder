@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-12-22T15:38:30Z</time></metadata><trk><name>Giudicarie</name><desc>name=Giudicarie
+name:de=Judikarien
+natural=valley
+note=tag approvato inizio 2015
+wikidata=Q465159
+wikipedia=it:Giudicarie</desc><link href="http://osm.org/browse/way/338435915"/><trkseg><trkpt lat="45.9402991" lon="10.6396507"/><trkpt lat="45.9674072" lon="10.6589737"/><trkpt lat="45.9738635" lon="10.6648225"/><trkpt lat="45.9933034" lon="10.6824374"/><trkpt lat="46.0187083" lon="10.7100418"/><trkpt lat="46.033802" lon="10.7307451"/><trkpt lat="46.0460176" lon="10.7573143"/><trkpt lat="46.0567938" lon="10.7932"/></trkseg></trk></gpx>

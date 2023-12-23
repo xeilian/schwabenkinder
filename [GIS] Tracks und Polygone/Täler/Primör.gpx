@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-12-22T15:37:24Z</time></metadata><trk><name>Val di Primiero</name><desc>name=Val di Primiero
+name:de=Primör
+natural=valley
+wikidata=Q2252934
+wikipedia=it:Primiero</desc><link href="http://osm.org/browse/way/338444645"/><trkseg><trkpt lat="46.2577078" lon="11.8041373"/><trkpt lat="46.2466813" lon="11.8082546"/><trkpt lat="46.2346963" lon="11.8104654"/><trkpt lat="46.2335732" lon="11.8106726"/><trkpt lat="46.2323756" lon="11.8109995"/><trkpt lat="46.2216079" lon="11.8139383"/><trkpt lat="46.214674" lon="11.816685"/><trkpt lat="46.2017392" lon="11.8230896"/><trkpt lat="46.1932349" lon="11.8270108"/><trkpt lat="46.1916489" lon="11.8278844"/><trkpt lat="46.1849103" lon="11.8309319"/><trkpt lat="46.1814344" lon="11.8319467"/><trkpt lat="46.1800127" lon="11.8323737"/><trkpt lat="46.1790605" lon="11.8325224"/></trkseg></trk></gpx>

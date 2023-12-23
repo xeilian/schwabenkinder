@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2023-12-22T18:53:14Z</time></metadata><trk><name>Gherdëina - Grödnertal - Val Gardena</name><desc>name=Gherdëina - Grödnertal - Val Gardena
+name:de=Grödnertal
+name:it=Val Gardena
+name:lld=Gherdëina
+natural=valley
+wikidata=Q384885
+wikipedia=it:Val Gardena</desc><link href="http://osm.org/browse/way/338449531"/><trkseg><trkpt lat="46.5987654" lon="11.5340662"/><trkpt lat="46.5955882" lon="11.6146137"/><trkpt lat="46.5887619" lon="11.6285077"/><trkpt lat="46.5766427" lon="11.6444217"/><trkpt lat="46.574103" lon="11.6606121"/><trkpt lat="46.5733409" lon="11.6692529"/><trkpt lat="46.5719897" lon="11.6753588"/><trkpt lat="46.5718565" lon="11.6757505"/><trkpt lat="46.5693734" lon="11.6830539"/><trkpt lat="46.5656356" lon="11.6902472"/><trkpt lat="46.5641404" lon="11.6938856"/><trkpt lat="46.5611212" lon="11.7009952"/><trkpt lat="46.5591945" lon="11.7079794"/><trkpt lat="46.5578812" lon="11.7169173"/><trkpt lat="46.5576372" lon="11.7257889"/><trkpt lat="46.5582066" lon="11.7330637"/><trkpt lat="46.5584099" lon="11.7392738"/><trkpt lat="46.5580633" lon="11.7455905"/><trkpt lat="46.5579626" lon="11.7467851"/><trkpt lat="46.5573932" lon="11.7513392"/><trkpt lat="46.5552784" lon="11.7589688"/><trkpt lat="46.5535545" lon="11.7642817"/></trkseg></trk></gpx>
