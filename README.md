@@ -102,6 +102,25 @@ Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln 
 | BN | Quellen Museum | Quellennachweis |
 | BO | Kommentare öffentlich | Öffentlicher Kommentar der Datenbankersteller:innen |
 
+### Übersicht über die anderen Auswertungen
+
+Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Datenbank, werden im folgenden auch die anderen Auswertungen aufgelistet. Diese Dateien werden nicht so detailreich dokumentiert, da es sich hierbei primär um Arbeitstabellen handelt, die nicht für eine Nachnutzung geeignet sind.
+| Name der Datei | zur Nachnutzung geeignet? | Beschreibung |
+| -- | -- | -- |
+| schwabenkinder_anno_auswertung.xlsx | Nein | Hierbei handelt es sich um eine Arbeitstabelle für die Zeitungsauswertung, in der basierend auf Zeitungsberichten die Anzahl der Schwabenkinder pro Jahr notiert wurden. |
+| schwabenkinder_bevölkerungsstatistik_1880.xlsx | Ja | Diese Tabelle enthält alle heutigen Gemeinden Tirol und Vorarlbergs, samt ihrer Regierungsbezirke, Gemeindecodes und der Bevölkerungszahlen der Jahre 1880 und 2001. Zusätzlich wurden Informationen zu Geoname-ID und Koordinaten übernommen. Zur Nachnutzung geeignet. |
+| schwabenkinder_demographische_berechnungen_alt.xlsx | Nein | Arbeitstabelle zur Berechnung von Demographie, Bevölkerungsdichte, Geburtenrate sowie der Anzahl der Dörfer und Weiler pro Region (hier Vorarlberg, Oberinntal und Etschtal) |
+| schwabenkinder_faessler_appenzell.xlsx | Ja | Auswertung von Innerrhoder Passregister in einer Studie von Floreana Fässler[^fn3]. Diese wurde als Vergleich der Daten der Datenbank verwendet. |
+| schwabenkinder_pivot_grafiken.xlsx | Nein | Arbeitstabelle zur Erstellung von Grafiken über das Excel-interne Pivottool. | schwabenkinder_tagebuch_regina.xlsx | Nein | Arbeitstabelle zur Notiz der Orte in Regina Lamperts Autobiographie[^fn4]. Dadurch wurde anschließend eine eigene Karte erstellt. Die Tabelle enthält Daten zu Datum, Tageszeit, Art des Fortbewegungsmittel, den Orten sowie der Seitenangabe. |
+| schwabenkinder_vergleiche.xlsx | Ja | Diese Datei enthält drei Auswertungen, die als Vergleiche von den Daten der Datenbank herbeigezogen wurden. Tabelle *VG Tirol, Uh. 1901-13* zeigt eine Auswertung von Otto Uhlig von Schuldispensen und Passregistern pro Herkunftsort für die Jahre 1901/04/05/09/13[^fn5]. Tabelle *VG Tirol, VB 1895* zeigt die Statistik des Tiroler Volksboten vom 25.04.1895, welche 220 Hütekindern zu den einzelnen Gemeinden Tirols zuordnete[^fn6]. Tabelle *VG VB, Uh. 1922-23* umfasst die Herkunftsorte von 161 Kindern aus den Jahren 1922 und 1923, die Uhlig mittels Schulakten ermittelte[^fn7]. |
+
+Daneben gibt es in dem Ordner *CSV-Dateien* eine Reihe von CSV-Dateien, die die Daten der bereits genannten Auswertungen in ein Format konvertieren, das von QGIS gelesen werden kann. Ohne diese Karten hätte das Kartenmaterial dieser Arbeit nicht erstellt werden können.
+
+
+
+
+
+
 
 
 
@@ -110,3 +129,13 @@ Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln 
 [^fn1]: [o.A.]: Ein Kinderhandel, in: Die Gartenlaube 4 (1866), S. 55. https://de.wikisource.org/wiki/Ein_Kinderhandel.
 
 [^fn2]: Bauernhaus-Museum Wolfegg (Hrsg.): Die Schwabenkinder Datenbank, online: Schwabenkinder.eu, https://www.schwabenkinder.eu/de/Datenbank/datenbank-suche/ [22.11.2023].
+
+[^fn3]: Fässler, Floreana: Appenzeller Schwabenkinder?, in: Innerrhoder Geschichtsfreund 1 (2013), S. 83–111.
+
+[^fn4]: Lampert, Regina: Die Schwabengängerin. Erinnerungen einer jungen Magd aus Vorarlberg 1864-1874, Zürich 2022.
+
+[^fn5]: Uhlig, Otto: Die Schwabenkinder aus Tirol und Vorarlberg (Tiroler Wirtschaftsstudien, Bd. 34), Innsbruck/Stuttgart 1983, S. 216/218.
+
+[^fn6]:  [o.A.]: Der Hütkinderverein, in: Tiroler Volksbote (25.04.1895), S. 4; auch gefunden in: [o.A.]: Die Fahrt der Hütkinder und jugendlichen Arbeiter ins Schwabenland, in: Tiroler Stimmen (23.04.1895), S. 8.
+
+[^fn7]: Uhlig, Schwabenkinder, S. 346.
