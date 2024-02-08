@@ -20,15 +20,87 @@ Dieses Github-Repository enthält sämtliche Daten, die in dieser Arbeit erstell
 
 ### Auswertung der Schwabenkinder-Datenbank
 
-Die Schwabenkinder-Datenbank ist als Excel-Tabelle unter dem Namen *schwabenkinder_datenbank_v3.xlsx* herunterladbar. Diese enthält alle, über die [offizielle Seite](https://www.schwabenkinder.eu) des Interreg-Projektes abrufbaren Datensätze. Diese sind auf fünf Tabellen aufgeteilt, die über ein komplexes Netz aus Formeln miteinander verbunden sind:
-* *#Schwabenkinder-Datenbank* enthält Daten zu allen 7.040 Arbeitseinsätzen. Diese ist besonders für die Auswertung der Arbeitsorte hilfreich.
+Die Schwabenkinder-Datenbank ist als Excel-Tabelle unter dem Namen *schwabenkinder_datenbank_v3.xlsx* herunterladbar. Diese enthält alle, über die [offizielle Seite](https://www.schwabenkinder.eu) des Interreg-Projektes abrufbaren Datensätze.
+
+#### Übersicht über die Tabellen
+
+Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln miteinander verbunden sind:
+* *#Schwabenkinder-Datenbank* enthält Daten zu allen 7.040 Arbeitseinsätzen. Dies ist die Haupttabelle, die alle Daten enthält und auf die die anderen Tabellen referenzieren. Diese ist besonders für die Auswertung der Arbeitsorte von Nutzen.
 * *Kinder* enthält die Liste aller Kinder, um die Gewichtung der Herkunftsorte bestimmen zu können. Durch Herausnahme mehrfacher Arbeitseinsätze eines Kindes, bleiben hier 5.425 eindeutige Einträge zu Kindern übrig
 * *Herkunftsorte* listet die Anzahl der Herkunftsorte pro Kind und Dienst auf und enthält zusätzlich alle in der Haupttabelle gespeicherten Ortsinformationen.
 * *Arbeitsorte (nach Gemeinden)* listet die Anzahl der Arbeitsorte pro Dienst (zusätzlich aufgeteilt auf alle Herkunftsregionen) auf. Diese Auswertung geht nach den damaligen Gemeinden in Oberschwaben und übernimmt alle Ortsinformationen aus der Haupttabelle.
 * *Arbeitsorte (nach Orten)* macht das gleiche wie oben, nur wird hier die Anzahl der Arbeitsorte nach den einzelnen Gemeindebestandteilen (also Orten) ausgewertet.
 
+#### Übersicht über die Felder der Haupttabelle
 
-
+| Spalte(n) | Feldname | Beschreibung |
+| -------- | -------- | -------- |
+| A | Kind-ID | die ID des Kindes, extrahiert durch die Nummer des Datensatzes auf der Webseite |
+| B | Arbeit-ID | die ID des Arbeitseinsatzes, im CSV-Download der Webseite enthalten |
+| C | Nachname | Vorname des Kindes |
+| D | Vorname | Nachname des Kindes |
+| E | Herkunft: Ort | Name des Herkunftsortes des Kindes |
+| F | Herkunft: Region | Moderne Region des Herkunftsortes (z.B. Bundesland oder Kanton) |
+| G | Herkunft: Ort (G-ID) | Geonames-ID des Herkunftsortes |
+| H | Herkunft: Ort (Lat.) | Längengrad des Herkunftsortes |
+| I | Herkunft: Ort (Lon.) | Breitengrad des Herkunftsortes |
+| J | Herkunft: Gem. heute | Heutige Gemeinde des Herkunftsortes |
+| K | Herkunft: Gem. heute (G-ID) | Geonames-ID der heutigen Gemeinde |
+| L | Herkunft: Gem. heute (Lat.) | Längengrad der heutigen Gemeinde |
+| M | Herkunft: Gem. heute (Lon.) | Breitengrad der heutigen Gemeinde |
+| N | Herkunft: Bevölkerung 1880 (nur T/VB) | Bevölkerung des Herkunftsortes im Jahr 1880 (nur für Vorarlberg, heutiges Tirol und Südtirol) |
+| O/P | Herkunft: Lat./Lon. Visualisierung | Es wurde nach Gemeinden ausgewertet. Da die Koordinaten der Gemeinden Mittelpunkte darstellen, wurden zur besseren Visualisierung die Koordinaten des Hauptortes verwendet. |
+| Q | Herkunft: Kreis/Bezirk/Bezirksgemeinschaft | heutiger Kreis, Bezirk oder Bezirksgemeinschaft der Gemeinde |
+| R | Tal | Tal des Herkunftsortes (nur für Vorarlberg und Tirol) |
+| S | Herkunft: Kreis (G-ID) | Geonames-ID des heutigen Kreises et.al. |
+| T | Herkunft: Kreis (Lat.) | Längengrad des heutigen Kreises et.al. |
+| U | Herkunft: Kreis (Lon.) | Breitengrad des heutigen Kreises et.al. |
+| V | Herkunft: Ort (Alternativ) | Alternativname des Herkunftsortes |
+| W | Geschlecht | (angenommenes) Geschlecht des Kindes |
+| X | Geburtsort | Geburtsort des Kindes (falls unterschiedlich zum Herkunftsort) |
+| Y | Geburtsdatum | Geburtsdatum des Kindes |
+| Z | Geburtsjahr | Geburtsjahr des Kindes (zur besseren Auswertung) |
+| AA | Arbeit: Alter bei Beginn | Alter des Kindes bei dem jeweiligen Arbeitseinsatz |
+| AB | Todestag | Todestag des Kindes |
+| AC | Arbeit: Schulbefreiung Start | Beginn der Schulbefreiung für den Arbeitseinsatz |
+| AD | Arbeit: Schulbefreiung Ende | Ende der Schulbefreiung für den Arbeitseinsatz |
+| AE | Arbeit: Beruf (raw) | Art der Arbeit, wie ursprünglich in der Datenbank angegeben |
+| AF | Arbeit: Beruf | Art der Arbeit nach eigener Kategorisierung |
+| AG | Arbeit: Dienstantritt Jahr | Jahr des Dienstantritts des Arbeitseinsatzes |
+| AH | Arbeit: Dienstantritt | Datum des Dienstantritts des Arbeitseinsatzes |
+| AI | Arbeit: Dienstende Jahr | Jahr des Dienstendes des Arbeitseinsatzes |
+| AJ | Arbeit: Dienstende | Datum des Dienstendes des Arbeitseinsatzes |
+| AK | Arbeit: Dienstherr | Name des Dienstherrn |
+| AL | Arbeit: Ort | Name des Arbeitsortes |
+| AM | Arbeit: Gem. alt | Gemeinde des Arbeitsortes vor der Gemeindereform 1972/73 |
+| AN | Arbeit: Gem. alt (Lat.) | Längengrad der damaligen Gemeinde |
+| AO | Arbeit: Gem. alt (Lon.) | Breitengrad der damaligen Gemeinde |
+| AP | Arbeit: Verwaltungseinheit alt | Alte Verwaltungseinheit des Arbeitsortes (bspw. Oberämter im Kngr. Württemberg) |
+| AQ | Arbeit: Region alt | Region bzw. ehemaliger Staat des Arbeitsortes (bspw. Kngr. Württemberg) |
+| AR | Arbeit: Gem. heute | Heutige Gemeinde des Arbeitsortes (nach der Gemeindereform 1972/73) |
+| AS | Arbeit: Region | Heutige Region des Arbeitsortes (bspw. Baden-Württemberg) |
+| AT | Arbeit: Gem. heute (G-ID) | Geonames-ID der heutigen Gemeinde |
+| AU | Arbeit: Gem. heute (Lat.) | Längengrad der heutigen Gemeinde |
+| AV | Arbeit: Gem. heute (Lon.) | Breitengrad der heutigen Gemeinde |
+| AW | Arbeit: Kreis | Heutiger Kreis des Arbeitsortes |
+| AX | Arbeit: Kreis (G-ID) | Geonames-ID des heutigen Kreises |
+| AY | Arbeit: Kreis (Lat.) | Längengrad des heutigen Kreises |
+| AZ | Arbeit: Kreis (Lon.) | Breitengrad des heutigen Kreises |
+| BA | Arbeit: Ort (Alternativ) | Alternativname des Arbeitsortes |
+| BB | Ehegatte Nachname | Vorname des Ehegatten |
+| BC | Ehegatte Vorname | Nachname des Ehegatten |
+| BD | Hochzeitstag | Hochzeitstag des Kindes |
+| BE | Hochzeitsort | Hochzeitsort des Kindes |
+| BF | Vater Name | Name des Vaters |
+| BG | Vater Geburtstag | Geburtstag des Vaters |
+| BH | Vater Beruf | Beruf des Vaters |
+| BI | Mutter Name | Name der Mutter |
+| BJ | Mutter Geburtstag | Geburtstag der Mutter |
+| BK | Mutter Beruf | Beruf der Mutters |
+| BL | Geschwister | Geschwister des Kindes |
+| BM | Nachfahren | Nachfahren des Kindes |
+| BN | Quellen Museum | Quellennachweis |
+| BO | Kommentare öffentlich | Öffentlicher Kommentar der Datenbankersteller:innen |
 
 
 
