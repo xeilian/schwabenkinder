@@ -209,7 +209,7 @@ Below are all the Python scripts written for this work. The scripts located in t
 
 #### 2.6.1. Newspaper Articles
 
-The repository also contains all newspaper articles used in this work. These were downloaded via the ANNO newspaper portal of the Austrian National Bank[^fn10] and can be accessed as JPGs in the folder ***[Zeitungsartikel](https://github.com/xeilian/schwabenkinder/tree/main/Zeitungsartikel)***. The data follows the format *[Newspaper Abbreviation] Year-Month-Day, Page*. Below is the key to the newspaper abbreviations:
+The repository also contains all newspaper articles used in this work. These were downloaded via the ANNO newspaper portal of the Austrian National Library[^fn10] and can be accessed as JPGs in the folder ***[Zeitungsartikel](https://github.com/xeilian/schwabenkinder/tree/main/Zeitungsartikel)***. The data follows the format *[Newspaper Abbreviation] Year-Month-Day, Page*. Below is the key to the newspaper abbreviations:
 
 | Newspaper Abbreviation | Newspaper Name |
 | -- | -- |
