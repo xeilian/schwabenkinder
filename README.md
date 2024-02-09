@@ -2,6 +2,7 @@
 
 *For an English version, see [here](https://github.com/xeilian/schwabenkinder/blob/main/README_en.md)*
 
+
 ## Inhaltsverzeichnis
 
 * **[1. Ziel des Projekts](#1-ziel-des-projekts)**
@@ -130,7 +131,6 @@ Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Dat
 
 Daneben gibt es in dem Ordner *CSV-Dateien* eine Reihe von CSV-Dateien, die die Daten der bereits genannten Auswertungen in ein Format konvertieren, das von QGIS gelesen werden kann. Ohne diese Karten hätte das Kartenmaterial dieser Arbeit nicht erstellt werden können.
 
-
 ### 2.3. Übersicht über die Grafiken
 
 Die Grafiken, die für diese Arbeit erstellt wurden, sollen die Auswertungen der Daten aus der Datenbank anschaulich visualieren. Die Grafiken, die im Ordner ***[[GIS] Grafiken](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Grafiken)*** vorhanden sind, werden im folgenden in Gänze abgebildet. Beim Klicken auf eines der Bilder gelangt man auf den Speicherort, wo die Datei in höherer Auflösung betrachtet werden kann.
@@ -201,15 +201,50 @@ Es folgen sämtliche Python-Scripte, die für diese Arbeit geschrieben wurden. D
 | Titel mit Link | Beschreibung |
 | -- | -- |
 | [[SK] #01 DB extrahieren und in XLSX kombinieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2301%20DB%20extrahieren%20und%20in%20XLSX%20kombinieren.py) | Dieses Script extrahiert die Datensätze aus der Original-Datenbank und kombiniert diese in eine Excel-Tabelle. |
-| [[SK] #02 Geodaten aus Geonames extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2302%20Geodaten%20aus%20Geonames%20extrahieren.py) | ## |
-| [[SK] #03 Koordinaten extrahieren I.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2303%20Koordinaten%20extrahieren%20I.py) | ## |
-| [[SK] #04 Koordinaten extrahieren II.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2304%20Koordinaten%20extrahieren%20II.py) | ## |
-| [[SK] #05 Leere Zeilen auffüllen.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2305%20Leere%20Zeilen%20auff%C3%BCllen.py) | ## |
-| [[SK] #06 Geonames-ID extrahieren (für Herkunftsorte).py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2306%20Geonames-ID%20extrahieren%20(f%C3%BCr%20Herkunftsorte).py) | ## |
-| [[SK] #07 Geonames-ID extrahieren (für Arbeitsorte).py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2307%20Geonames-ID%20extrahieren%20(f%C3%BCr%20Arbeitsorte).py) | ## |
-| [[SK] #08 Wahrheitstest für Ortschaften.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2308%20Wahrheitstest%20f%C3%BCr%20Ortschaften.py) | ## |
-| [[SK] #09 ADM-Daten extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2309%20ADM-Daten%20extrahieren.py) | ## |
-| [[SK] #10 Bevölkerungsstatistik, Geonames-ID und Koordinaten extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2310%20Bev%C3%B6lkerungsstatistik%2C%20Geonames-ID%20und%20Koordinaten%20extrahieren.py) | ## |
+| [[SK] #02 Geodaten aus Geonames extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2302%20Geodaten%20aus%20Geonames%20extrahieren.py) | Dieses Script extrahiert Geodaten aus der Geonames-API. Der Input hierbei sind die Namen der Herkunfts- und Arbeitsorte. |
+| [[SK] #03 Geonames-ID extrahieren [Erster Versuch].py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2303%20Geonames-ID%20extrahieren%20%5BErster%20Versuch%5D.py) | Dieses Script hat nicht die gewünschten Ergebnisse gezeigt, siehe Skript 6 und 7. Idee war es, die Geonames-ID via Geonames-API zu extrahieren. Der Input waren die Koordinaten. |
+| [[SK] #04 Koordinaten extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2304%20Koordinaten%20extrahieren.py) | Dieses Script soll die Koordinaten, die zu dem Zeitpunkt nicht extrahiert wurden, nachfügen. |
+| [[SK] #05 Leere Zeilen auffüllen.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2305%20Leere%20Zeilen%20auff%C3%BCllen.py) | Dieses Script soll leere Zeilen im Excel-Dokument mit den fehlenden Daten nachfüllen. Leider hat dies in diesem Fall nicht funktioniert. |
+| [[SK] #06 Geonames-ID extrahieren (für Herkunftsorte).py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2306%20Geonames-ID%20extrahieren%20(f%C3%BCr%20Herkunftsorte).py) | Dieses Script extrahiert die Geonames-ID für die Herkunftsorte via Geonames-API. Input sind der Ort, das Land und der ADM-Code in Geonames. |
+| [[SK] #07 Geonames-ID extrahieren (für Arbeitsorte).py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2307%20Geonames-ID%20extrahieren%20(f%C3%BCr%20Arbeitsorte).py) | Das gleiche Vorgehen wie in Script 7, aber für die Arbeitsorte. |
+| [[SK] #08 Wahrheitstest für Ortschaften.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2308%20Wahrheitstest%20f%C3%BCr%20Ortschaften.py) | Dieses Script prüft nach, ob die Geonames die Orte auch mit den Ortsnamen findet. Es gab bis dahin ein Problem, dass das Script stattdessen die administrativen Geonames-Einträge übernommen hat. Anschließend können Einträge solche mit den oberen Script wieder befüllt werden. |
+| [[SK] #09 ADM-Daten extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2309%20ADM-Daten%20extrahieren.py) | Dieses Script extrahiert sämtliche administrativen Informationen eines Ortes mit der Geonames-ID. Dies enthält Daten zu Land, Bundesland/Kanton, Regionen, Kreisen und Gemeinden. |
+| [[SK] #10 Bevölkerungsstatistik, Geonames-ID und Koordinaten extrahieren.py](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Python-Scripte/%5BSK%5D%20%2310%20Bev%C3%B6lkerungsstatistik%2C%20Geonames-ID%20und%20Koordinaten%20extrahieren.py) | Dieses Script extrahiert Geonames-ID und Koordinaten für die Bevölkerungsstatistik 1880 (siehe: Datei *schwabenkinder_bevölkerungsstatistik_1880.xlsx*). Mittels XVERWEIS-Funktion in Excel kann die Haupttabelle mit den Bevölkerungsdaten ergänzt. |
+
+### 2.6. Sonstiges
+
+#### 2.6.1. Zeitungsartikel
+
+Das Repository enthält auch alle Zeitungsartikel, die in dieser Arbeit verwendet wurden. Diese wurden über die das Zeitungsportal ANNO der Österreichischen Nationalbank heruntergeladen[^fn10] und sind im Ordner ***[Zeitungsartikel](https://github.com/xeilian/schwabenkinder/tree/main/Zeitungsartikel)*** als JPGs abrufbar. Die Daten haben das Format *[Zeitungskürzel] Jahr-Monat-Tag, Seite*. Im folgenden befindet sich der Schlüssel der Zeitungskürzel:
+| Zeitungskürzel | Name der Zeitung |
+| -- | -- |
+| BTV | Bote für Tirol und Vorarlberg |
+| DP | Die Presse |
+| IN | Innsbrucker Nachrichten |
+| RZ | Ravensburger Zeitung |
+| STW | Schwäbische Tagwacht |
+| TS | Tiroler Stimmen |
+| TVB | Tiroler Volksbote |
+| VLZ | Vorarlberger Landezeitung |
+| VT | Vorarlberger/Bregenzer Tagblatt |
+| VV | Vorarlberger Volksblatt |
+| WZ | Wiener Zeitung |
+
+#### 2.6.2. Archiv
+
+Unter ***[Archiv]*** befinden sich alle restlichen Arbeitstabellen sowie Ideen, die nicht umgesetzt werden können. 
+
+* im Hauptverzeichnis:
+  * *[SK] GPX-Dateien aus Komoot.zip:* Dieses ZIP enthält die GPX-Dateien, die als Teil des damaligen Interreg-Projektes auf Komoot veröffentlicht wurden.
+  * *[SK] Rohdaten aus DB.zip:* Dieses ZIP enthält alle Einzel-CSV-Dateien, wie sie mit Script 1 von der Datenbank extrahiert wurden.
+* Ordner 'Excel-Tabellen'
+  * *schwabenkinder_datenbank_v0_raw.xls:* Das ist die Rohdatenbank, die sie von dem Script aus einen Einzelteilen zusammengesetzt wurde.
+  * *schwabenkinder_datenbank_v1/v2.xlsx:* Zwei Zwischenzustände der Datenbank. Beide wurden zur Datensicherung angelegt.
+  * *schwabenkinder_doc_admex[...].xlsx:* Diese Dateien sind Arbeitstabellen, die für die Extraktion von den administrativen Einträgen erstellt wurden.
+  * *schwabenkinder_geonames[...].xlsx:* Dies sind auch Arbeitstabellen, die für die Extraktion der ursprünglichen Daten aus Geonames erstellt wurden.
+  * *schwabenkinder_gephi[...].xlsx/.csv*: Abgebrochene Versuche mit Gephi, einem Datenanalyse-Tool. Leider waren die Ergebnisse aus Gephi nicht aussagekräftig und vor allen Dingen konfus.
+* Ordner 'Kartenmaterial': Dieser Ordner enthält ursprüngliches Kartenmaterial, das durch QGIS-Layer ersetzt wurde.
+* Ordner 'Versuche mit Mapbox': Wie der Name sagt, enthält der Ordner Dateien, die für die Visualisierung in Mapbox erstellt wurden. Leider musste dieses Projekt aus Zeitgründen (vorerst) fallen gelassen werden.
 
 
 [^fn1]: [o.A.]: Ein Kinderhandel, in: Die Gartenlaube 4 (1866), S. 55. https://de.wikisource.org/wiki/Ein_Kinderhandel.
@@ -229,3 +264,5 @@ Es folgen sämtliche Python-Scripte, die für diese Arbeit geschrieben wurden. D
 [^fn8]: Historical GIS datafiles, online: Censusmosaic, https://censusmosaic.demog.berkeley.edu/data/historical-gis-files [12.12.2023].
 
 [^fn9]: swissBOUNDARIES3D, online: Bundesamt für Landestopographie der Schweiz, https://swisstopo.admin.ch/de/geodata/landscape/boundaries3d.html [22.12.2023].
+
+[^fn10]: ANNO Historische Zeitungen und Zeitschriften, online: Österreichische Nationalbibliothek, https://anno.onb.ac.at/ [05.11.2023].
