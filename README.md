@@ -20,7 +20,7 @@ Dieses Github-Repository enthält sämtliche Daten, die in dieser Arbeit erstell
 
 ### Auswertung der Schwabenkinder-Datenbank
 
-Die Schwabenkinder-Datenbank ist als Excel-Tabelle unter dem Namen *schwabenkinder_datenbank_v3.xlsx* herunterladbar. Diese enthält alle, über die [offizielle Seite](https://www.schwabenkinder.eu) des Interreg-Projektes abrufbaren Datensätze.
+Die Schwabenkinder-Datenbank ist als Excel-Tabelle unter dem Namen ***[schwabenkinder_datenbank_v3.xlsx](https://github.com/xeilian/schwabenkinder/blob/main/%23schwabenkinder_datenbank_v3.xlsx)*** herunterladbar. Diese enthält alle, über die [offizielle Seite](https://www.schwabenkinder.eu) des Interreg-Projektes abrufbaren Datensätze.
 
 #### Übersicht über die Tabellen
 
@@ -104,7 +104,7 @@ Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln 
 
 ### Übersicht über die anderen Auswertungen
 
-Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Datenbank, werden im folgenden auch die anderen Auswertungen aufgelistet. Diese Dateien werden nicht so detailreich dokumentiert, da es sich hierbei primär um Arbeitstabellen handelt, die nicht für eine Nachnutzung geeignet sind.
+Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Datenbank, werden im folgenden auch die anderen Auswertungen aufgelistet. Diese Dateien, die im Ordner ***[[GIS] Auswertungen](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Auswertungen)*** enthalten sind, werden nicht so detailreich dokumentiert, da es sich hierbei primär um Arbeitstabellen handelt, die nicht für eine Nachnutzung geeignet sind.
 | Name der Datei | zur Nachnutzung geeignet? | Beschreibung |
 | -- | -- | -- |
 | schwabenkinder_anno_auswertung.xlsx | Nein | Hierbei handelt es sich um eine Arbeitstabelle für die Zeitungsauswertung, in der basierend auf Zeitungsberichten die Anzahl der Schwabenkinder pro Jahr notiert wurden. |
@@ -117,10 +117,68 @@ Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Dat
 Daneben gibt es in dem Ordner *CSV-Dateien* eine Reihe von CSV-Dateien, die die Daten der bereits genannten Auswertungen in ein Format konvertieren, das von QGIS gelesen werden kann. Ohne diese Karten hätte das Kartenmaterial dieser Arbeit nicht erstellt werden können.
 
 
+### Übersicht über die Grafiken
 
+Die Grafiken, die für diese Arbeit erstellt wurden, sollen die Auswertungen der Daten aus der Datenbank anschaulich visualieren. Die Grafiken, die im Ordner ***[[GIS] Grafiken](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Grafiken)*** vorhanden sind, werden im folgenden in Gänze abgebildet. Beim Klicken auf eines der Bilder gelangt man auf den Speicherort, wo die Datei in höherer Auflösung betrachtet werden kann.
 
+|  |  |  |
+| -- | -- | -- |
+| [![Grafik, Alter.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Alter.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Alter.png) <br> *Grafik, Alter* | [![Grafik, Alterspyramide.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Alterspyramide.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Alterspyramide.png) <br> *Grafik, Alterspyramide* | [![Grafik, Dienstbeginne und enden.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Dienstbeginne%20und%20enden.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Dienstbeginne%20und%20enden.png) <br> *Grafik, Dienstbeginne und enden* |
+| [![Grafik, Dienste.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Dienste.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Dienste.png) <br> *Grafik, Dienste* | [![Grafik, Geschlecht.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Geschlecht.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Geschlecht.png) <br> *Grafik, Geschlecht* | [![Grafik, Hütekindermärkte.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20H%C3%BCtekinderm%C3%A4rkte.png?raw=true)](https://example.com/hütekindermärkte) <br> *Grafik, Hütekindermärkte* |
+| [![Grafik, Zeitliche Verteilung.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Zeitliche%20Verteilung.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Zeitliche%20Verteilung.png) <br> *Grafik, Zeitliche Verteilung* | | |
+| | | |
 
+### Übersicht über die Karten, Polygone, Tracks und QGIS-Layer
 
+Da im Rahmen dieser Arbeit eine Datenbank mittels GIS-Methoden ausgewertet und visualiert wurde, lag es nahe, das Phänomen der Schwabenkinder auch mithilfe von Karten darzustellen. Für die Darstellung der Daten wurde das Open-Source-Programm [QGIS](https://www.qgis.org/) verwendet.
+
+#### Polygone, Tracks und QGIS-Layer
+
+Um die in der CSV-Datei (s.o.) gespeicherten Auswertungen in übersichtlichen Karten darzustellen, braucht es Polygone und Tracks. Tracks sind Linien, während Polygone eine geographische Fläche darstellen. Ich brauchte eine Menge unterschiedlicher Polygone und Tracks, um meine Karten so zu gestalten, wie ich sie gerne haben möchte.
+
+Tracks (wie etwa Täler und Bahnlinien) habe ich mithilfe des freien Tools [Overpass Turbo](https://overpass-turbo.eu/) extrahiert: Beispiel Arlbergbahn. Die Arlbergbahn hat in OpenStreetMap (OSM) die Relation 1623486. Diese kann herausgefunden werden, indem man die Bahnlinie in der Karte sucht und auf die rechte Maustaste klickt. Es öffnet sich ein kleines Menü, wo man dann auf “Objektabfrage” klicken muss. Es öffnet sich ein Seitenfenster, wo man die Bahn und anschließend ganz unten die Relation auswählen muss. Anschließend wurde mithilfe eines kurzen Skriptes in Overpass Turbo die Relation-ID in eine herunterladbare GPX-Datei umgewandelt. Manche Tracks (wie etwa Ländergrenzen) können in QGIS in Polygone umgewandelt werden. 
+
+```
+[out:xml][timeout:25];
+// Relation ID 1623486
+relation(1623486);
+out meta;
+>;
+out skel qt;
+```
+
+Das Verzeichnis ***[[GIS] Tracks und Polygone](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Tracks%20und%20Polygone)*** enthält alle Tracks und Polygone, die für diese Arbeit benutzt wurden. Dies umfasst etwa Bahnstrecken aus Österreich und Deutschland, alle Herkunftsregionen (etwa Kantone, Landkreise, Ländergrenzen u.ä.) als auch die für die Arbeit benötigten Täler. 
+
+Besonders historische Geodaten konnten jedoch nicht mittels Overpass Turbo extrahiert werden, da OSM schließlich nur aktuelle Daten besitzt. Hierfür mussten auf externe Shapefiles zurückgegriffen werden, etwa für die Verwaltungsbezirke und die historischen Staatsgrenzen im Deutschen Reich[^fn8]. Für die heutige Schweiz gilt ähnliches[^fn9].
+
+Die fertigen Karten mit allen Auswertungen, Grenzen, Bahnlinien etc. wurden mit allen Einstellungen (etwa zu Textgrößen, Schriftarten etc.) in Geopackage-Dateien gespeichert. Diese erlauben eine sekundenschnelle Nachbildung der Karten in QGIS, da durch einen Import alle in der Datei hinterlegten Tracks, Polygone oder CSV-Dateien automatisch geöffnet werden. Dies erlaubt eine genauere Betrachtung der geographischen Verteilung der Orte, die eine statische Karte nicht erlaubt. Im Ordner ***[[GIS] QGIS-Layer](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20QGIS-Layer)*** sind 12 .gpkg-Dateien vorhanden, die im folgenden aufgelistet werden sollen:
+
+| Name der Datei | Beschreibung |
+| -- | -- |
+| layer_arbeit_bahnstrecken.gpkg | Die Bahnstrecken zu den Arbeitsorten |
+| layer_arbeit_landkreis.gpkg | Geolayer der heutigen Landkreise der Arbeitsorte |
+| layer_arbeit_regionen.gpkg | Geolayer der ehemaligen Staaten (mit Verwaltungseinheiten) der Arbeitsorte |
+| layer_arbeitsorte.gpkg | Die Arbeitsorte nach damaligen Gemeinden, gewichtet nach der Zahl der Einsätze |
+| layer_herkunft_bahnstrecken.gpkg | Die Bahnstrecken in den Herkunftsregionen |
+| layer_herkunft_regionen_schweiz_fl.gpkg | Geolayer für die Schweiz und Liechtenstein |
+| layer_herkunft_regionen_tirol_vorarlberg.gpkg | Geolayer für Tirol und Vorarlberg |
+| layer_herkunft_täler.gpkg | Tracks der Täler und Polygone des Bregenzerwalds und Vinschgaus
+| layer_herkunftsorte.gpkg | Die Herkunftsorte nach heutigen Gemeinden, gewichtet nach der Zahl der Kinder |
+| layer_regina_jahr1.gpkg | Der Weg von Regina Lampert von Schnifis nach Berg im ersten Jahr |
+| layer_vergleiche.gpkg | Die Vergleiche der Daten der Datenbank mit anderen Erhebungen (s.o.) |
+| layer_wege.gpkg | Die Wege der Schwabenkinder von den Tirol/Vorlarlberg nach Oberschwaben mit den wichtigsten Orten und Pässen, als auch den Tälern |
+
+#### Übersicht über die Karten
+
+| | | |
+| -- | -- | -- |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit%2C%20Bahnlinien.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit,%20Bahnlinien.png?raw=true" alt="Arbeit, Bahnlinien" height="200"></a> <br> *Arbeit, Bahnlinien* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit%2C%20Landkreise.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit,%20Landkreise.png?raw=true" alt="Arbeit, Landkreise" height="200"></a> <br> *Arbeit, Landkreise* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit%2C%20Verkehrsaufkommen.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeit,%20Verkehrsaufkommen.png?raw=true" alt="Arbeit, Verkehrsaufkommen" height="200"></a> <br> *Arbeit, Verkehrsaufkommen* |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeitsorte.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Arbeitsorte.png?raw=true" alt="Arbeitsorte" height="200"></a> <br> *Arbeitsorte* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Grafik%2C%20Regina%20Lampert%2C%20Jahr%201.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Grafik,%20Regina%20Lampert,%20Jahr%201.png?raw=true" alt="Grafik, Regina Lampert, Jahr 1" height="200"></a> <br> *Grafik, Regina Lampert, Jahr 1* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Bahnlinien.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Bahnlinien.png?raw=true" alt="Herkunft, Bahnlinien" height="200"></a> <br> *Herkunft, Bahnlinien* |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Graub%C3%BCnden.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Graub%C3%BCnden.png?raw=true" alt="Herkunft, Graubünden" height="200"></a> <br> *Herkunft, Graubünden* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Nordtirol.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Nordtirol.png?raw=true" alt="Herkunft, Nordtirol" height="200"></a> <br> *Herkunft, Nordtirol* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20S%C3%BCdtirol.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20S%C3%BCdtirol.png?raw=true" alt="Herkunft, Südtirol" height="200"></a> <br> *Herkunft, Südtirol* |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20St.%20Gallen%2C%20Liechtenstein%20und%20Appenzell.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20St.%20Gallen,%20Liechtenstein%20und%20Appenzell.png?raw=true" alt="Herkunft, St. Gallen, Liecht., Appenzell" height="200"></a> <br> *Herkunft, St. Gallen, Liecht., Appenzell* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Trentino.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Trentino.png?raw=true" alt="Herkunft, Trentino" height="200"></a> <br> *Herkunft, Trentino* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Vorarlberg.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Vorarlberg.png?raw=true" alt="Herkunft, Vorarlberg" height="200"></a> <br> *Herkunft, Vorarlberg* |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft%2C%20Wege.jpg"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Herkunft,%20Wege.jpg?raw=true" alt="Herkunft, Wege" height="200"></a> <br> *Herkunft, Wege* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t%2C%20Tiroler%20Volksbote%201895.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t,%20Tiroler%20Volksbote%201895.png?raw=true" alt="Validität, Tiroler Volksbote 1895" height="200"></a> <br> *Validität, Tiroler Volksbote 1895* | <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t%2C%20Uhlig%20Tirol%201901-13.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t,%20Uhlig%20Tirol%201901-13.png?raw=true" alt="Validität, Uhlig Tirol 1901-13" height="200"></a> <br> *Validität, Uhlig Tirol 1901-13* |
+| <a href="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t%2C%20Uhlig%20VB%201923.png"><img src="https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Karten/Validit%C3%A4t,%20Uhlig%20VB%201923.png?raw=true" alt="Validität, Uhlig VB 1923" height="200"></a> <br> *Validität, Uhlig VB 1923* |  |  |
+| | | |
 
 
 
@@ -139,3 +197,7 @@ Daneben gibt es in dem Ordner *CSV-Dateien* eine Reihe von CSV-Dateien, die die 
 [^fn6]:  [o.A.]: Der Hütkinderverein, in: Tiroler Volksbote (25.04.1895), S. 4; auch gefunden in: [o.A.]: Die Fahrt der Hütkinder und jugendlichen Arbeiter ins Schwabenland, in: Tiroler Stimmen (23.04.1895), S. 8.
 
 [^fn7]: Uhlig, Schwabenkinder, S. 346.
+
+[^fn8]: Historical GIS datafiles, online: Censusmosaic, https://censusmosaic.demog.berkeley.edu/data/historical-gis-files [12.12.2023].
+
+[^fn9]: swissBOUNDARIES3D, online: Bundesamt für Landestopographie der Schweiz, https://swisstopo.admin.ch/de/geodata/landscape/boundaries3d.html [22.12.2023].
