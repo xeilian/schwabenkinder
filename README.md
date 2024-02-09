@@ -16,6 +16,9 @@
     * *[2.4.1. Polygone, Tracks und QGIS-Layer](#241-polygone-tracks-und-qgis-layer)*
     * *[2.4.2. Übersicht über die Karten](#242-übersicht-über-die-karten)*
   * [2.5. Übersicht über die Python-Scripte](#25-übersicht-über-die-python-scripte)
+  * [2.6. Sonstiges](#26-sonstiges)
+    * [2.6.1. Zeitungsartikel](#261-zeitungsartikel)
+    * [2.6.2. Archiv](#262-archiv)
 
 
 ## 1. Ziel des Projekts
@@ -232,7 +235,7 @@ Das Repository enthält auch alle Zeitungsartikel, die in dieser Arbeit verwende
 
 #### 2.6.2. Archiv
 
-Unter ***[Archiv]*** befinden sich alle restlichen Arbeitstabellen sowie Ideen, die nicht umgesetzt werden können. 
+Unter ***[[Archiv]](https://github.com/xeilian/schwabenkinder/tree/main/%5BArchiv%5D)*** befinden sich alle restlichen Arbeitstabellen sowie Ideen, die nicht umgesetzt werden können. 
 
 * im Hauptverzeichnis:
   * *[SK] GPX-Dateien aus Komoot.zip:* Dieses ZIP enthält die GPX-Dateien, die als Teil des damaligen Interreg-Projektes auf Komoot veröffentlicht wurden.
