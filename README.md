@@ -2,8 +2,21 @@
 
 *For an English version, see [here](https://github.com/xeilian/schwabenkinder/blob/main/README_en.md)*
 
+## Inhaltsverzeichnis
 
-## Ziel des Projekts
+* **[1. Ziel des Projekts](#1-ziel-des-projekts)**
+* **[2. Dokumentation der Daten im Repository](#2-dokumentation-der-daten-im-repository)**
+  * [2.1. Auswertung der Schwabenkinder-Datenbank](#21-auswertung-der-schwabenkinder-datenbank)
+    * *[2.1.1. Übersicht über die Tabellen](#211-übersicht-über-die-tabellen)*
+    * *[2.1.2. Übersicht über die Felder der Haupttabelle](#212-übersicht-über-die-felder-der-haupttabelle)*
+  * [2.2. Übersicht über die anderen Auswertungen](#22-übersicht-über-die-anderen-auswertungen)
+  * [2.3. Übersicht über die Grafiken](#23-übersicht-über-die-grafiken)
+  * [2.4. Übersicht über die Karten, Polygone, Tracks und QGIS-Layer](#24-übersicht-über-die-karten-polygone-tracks-und-qgis-layer)
+    * *[2.4.1. Polygone, Tracks und QGIS-Layer](#241-polygone-tracks-und-qgis-layer)*
+    * *[2.4.2. Übersicht über die Karten](#242-übersicht-über-die-karten)*
+
+
+## 1. Ziel des Projekts
 
 Die Freizeitillustrierte 'Die Gartenlaube' berichtete in einer Ausgabe von 1866 von einer seltsamen Begebenheit, die sich in einem Wirtshaus irgendwo zwischen Lindau und Bregenz ereignet hatte: *“Da saß eine Schaar rothwangiger Knaben und Mädchen in allen Altersclassen, vom siebenten bis zum fünfzehnten Lebensjahre, still ein Jedes in sich gekehrt [...]”* [^fn1] Die Kinder wurden anschließend in Ravensburg dem Hütekindermarkt zugeführt, wo sie unter den kritischen Augen der schwäbischen Bauern und Bäuerinnen auf ihre Leistungsfähigkeit überprüft und in ihre Dienste aufgenommen wurden. *“Es ist eben ein Stück Sclavenhandel, man mag sich abmühen, wie man will, die häßliche Sache mit milderem Auge zu betrachten.”*[^fn1] Szenen wie jene aus dem Jahr 1866 waren vor einem Jahrhundert Alltag im mittleren Alpenraum: stets im März verließen Kinder zwischen sieben und fünfzehn Jahren ihre Heimat in Österreich, Liechtenstein und der Schweiz, um in Süddeutschland landwirtschaftliche Arbeiten zu verrichten.
 
@@ -14,15 +27,15 @@ Sämtliche Geodaten zu Herkunfts- und Arbeitsorten sind jedoch nur in Textform e
 Obwohl auch Daten zur Schweiz und Liechtenstein vorliegen, hat sich diese Arbeit auf Vorarlberg und Tirol fokussiert. Tirol wird dabei in seiner ursprünglichen historischen Form begriffen, das aus dem heutigen österreichischen Bundesland Tirol (Nord- und Osttirol) sowie der heutigen italienischen autonomen Region Trentino-Alto Adige (Südtirol und Trentino/Welschtirol) besteht. Da die Idee eines souveränen Südtirol erst in den 1920er-Jahren entstanden ist und von dort viele Schwabenkinder stammten, wird auch die Gegend südlich des Brenner beleuchtet. Das Ziel dieser Migration wird auf die Region Oberschwaben im heutigen Baden-Württemberg beschränkt. Auswanderungen nach Bayern wurden nicht in der Datenbank erfasst. Der Untersuchungszeitraum wird auf die Jahre von 1812 bis 1938 festgesetzt, was den ersten und letzten Eintrag der Datenbank widerspiegelt. Es gab zwar bereits vor 1812 eine lange Tradition dieser Art der Migration, jedoch ist die Quellenlage bis ins 19. Jahrhundert äußerst lückenhaft.
 
 
-## Dokumentation der Daten im Repository
+## 2. Dokumentation der Daten im Repository
 
 Dieses Github-Repository enthält sämtliche Daten, die in dieser Arbeit erstellt wurden. Dieses Datenmaterial reicht von Datenauswertungen in Excel-Tabellen, allen mit QGIS erstellten Karten samt aller Polygone, Tracks und gpkg-Dateien. Auch sind sowohl die in der Arbeit verwendeten Grafiken, die die Datenauswertungen visualisieren, als auch alle Python-Scripte vorhanden, die für diese Arbeit erstellt wurden. Diese Dokumentation soll einen Überblick über die hier veröffentlichten Daten schaffen, damit diese, unter entsprechendem Nachweis, nachgenutzt werden können.
 
-### Auswertung der Schwabenkinder-Datenbank
+### 2.1. Auswertung der Schwabenkinder-Datenbank
 
 Die Schwabenkinder-Datenbank ist als Excel-Tabelle unter dem Namen ***[schwabenkinder_datenbank_v3.xlsx](https://github.com/xeilian/schwabenkinder/blob/main/%23schwabenkinder_datenbank_v3.xlsx)*** herunterladbar. Diese enthält alle, über die [offizielle Seite](https://www.schwabenkinder.eu) des Interreg-Projektes abrufbaren Datensätze.
 
-#### Übersicht über die Tabellen
+#### 2.1.1. Übersicht über die Tabellen
 
 Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln miteinander verbunden sind:
 * *#Schwabenkinder-Datenbank* enthält Daten zu allen 7.040 Arbeitseinsätzen. Dies ist die Haupttabelle, die alle Daten enthält und auf die die anderen Tabellen referenzieren. Diese ist besonders für die Auswertung der Arbeitsorte von Nutzen.
@@ -31,7 +44,7 @@ Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln 
 * *Arbeitsorte (nach Gemeinden)* listet die Anzahl der Arbeitsorte pro Dienst (zusätzlich aufgeteilt auf alle Herkunftsregionen) auf. Diese Auswertung geht nach den damaligen Gemeinden in Oberschwaben und übernimmt alle Ortsinformationen aus der Haupttabelle.
 * *Arbeitsorte (nach Orten)* macht das gleiche wie oben, nur wird hier die Anzahl der Arbeitsorte nach den einzelnen Gemeindebestandteilen (also Orten) ausgewertet.
 
-#### Übersicht über die Felder der Haupttabelle
+#### 2.1.2. Übersicht über die Felder der Haupttabelle
 
 | Spalte(n) | Feldname | Beschreibung |
 | -------- | -------- | -------- |
@@ -102,7 +115,7 @@ Die Datenbank enthält fünf Tabellen, die über ein komplexes Netz aus Formeln 
 | BN | Quellen Museum | Quellennachweis |
 | BO | Kommentare öffentlich | Öffentlicher Kommentar der Datenbankersteller:innen |
 
-### Übersicht über die anderen Auswertungen
+### 2.2. Übersicht über die anderen Auswertungen
 
 Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Datenbank, werden im folgenden auch die anderen Auswertungen aufgelistet. Diese Dateien, die im Ordner ***[[GIS] Auswertungen](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Auswertungen)*** enthalten sind, werden nicht so detailreich dokumentiert, da es sich hierbei primär um Arbeitstabellen handelt, die nicht für eine Nachnutzung geeignet sind.
 | Name der Datei | zur Nachnutzung geeignet? | Beschreibung |
@@ -117,7 +130,7 @@ Neben der wohl wichtigsten Datei des Gits, der Auswertung der Schwabenkinder-Dat
 Daneben gibt es in dem Ordner *CSV-Dateien* eine Reihe von CSV-Dateien, die die Daten der bereits genannten Auswertungen in ein Format konvertieren, das von QGIS gelesen werden kann. Ohne diese Karten hätte das Kartenmaterial dieser Arbeit nicht erstellt werden können.
 
 
-### Übersicht über die Grafiken
+### 2.3. Übersicht über die Grafiken
 
 Die Grafiken, die für diese Arbeit erstellt wurden, sollen die Auswertungen der Daten aus der Datenbank anschaulich visualieren. Die Grafiken, die im Ordner ***[[GIS] Grafiken](https://github.com/xeilian/schwabenkinder/tree/main/%5BGIS%5D%20Grafiken)*** vorhanden sind, werden im folgenden in Gänze abgebildet. Beim Klicken auf eines der Bilder gelangt man auf den Speicherort, wo die Datei in höherer Auflösung betrachtet werden kann.
 
@@ -128,11 +141,11 @@ Die Grafiken, die für diese Arbeit erstellt wurden, sollen die Auswertungen der
 | [![Grafik, Zeitliche Verteilung.png](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Zeitliche%20Verteilung.png?raw=true)](https://github.com/xeilian/schwabenkinder/blob/main/%5BGIS%5D%20Grafiken/Grafik%2C%20Zeitliche%20Verteilung.png) <br> *Grafik, Zeitliche Verteilung* | | |
 | | | |
 
-### Übersicht über die Karten, Polygone, Tracks und QGIS-Layer
+### 2.4. Übersicht über die Karten, Polygone, Tracks und QGIS-Layer
 
 Da im Rahmen dieser Arbeit eine Datenbank mittels GIS-Methoden ausgewertet und visualiert wurde, lag es nahe, das Phänomen der Schwabenkinder auch mithilfe von Karten darzustellen. Für die Darstellung der Daten wurde das Open-Source-Programm [QGIS](https://www.qgis.org/) verwendet.
 
-#### Polygone, Tracks und QGIS-Layer
+#### 2.4.1. Polygone, Tracks und QGIS-Layer
 
 Um die in der CSV-Datei (s.o.) gespeicherten Auswertungen in übersichtlichen Karten darzustellen, braucht es Polygone und Tracks. Tracks sind Linien, während Polygone eine geographische Fläche darstellen. Ich brauchte eine Menge unterschiedlicher Polygone und Tracks, um meine Karten so zu gestalten, wie ich sie gerne haben möchte.
 
@@ -168,7 +181,7 @@ Die fertigen Karten mit allen Auswertungen, Grenzen, Bahnlinien etc. wurden mit 
 | layer_vergleiche.gpkg | Die Vergleiche der Daten der Datenbank mit anderen Erhebungen (s.o.) |
 | layer_wege.gpkg | Die Wege der Schwabenkinder von den Tirol/Vorlarlberg nach Oberschwaben mit den wichtigsten Orten und Pässen, als auch den Tälern |
 
-#### Übersicht über die Karten
+#### 2.4.2. Übersicht über die Karten
 
 | | | |
 | -- | -- | -- |
