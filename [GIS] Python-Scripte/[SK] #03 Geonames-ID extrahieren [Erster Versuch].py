@@ -1,4 +1,4 @@
-#03 | KOORDINATEN EXTRAHIEREN I
+#03 | GEONAMES-ID EXTRAHIEREN [ERSTER VERSUCH]
 
 import requests
 import pandas as pd
