@@ -1,4 +1,4 @@
-#04 | KOORDINATEN EXTRAHIEREN II
+#04 | KOORDINATEN EXTRAHIEREN
 
 import openpyxl
 import requests
