@@ -17,8 +17,8 @@
     * *[2.4.2. Übersicht über die Karten](#242-übersicht-über-die-karten)*
   * [2.5. Übersicht über die Python-Scripte](#25-übersicht-über-die-python-scripte)
   * [2.6. Sonstiges](#26-sonstiges)
-    * [2.6.1. Zeitungsartikel](#261-zeitungsartikel)
-    * [2.6.2. Archiv](#262-archiv)
+    * *[2.6.1. Zeitungsartikel](#261-zeitungsartikel)*
+    * *[2.6.2. Archiv](#262-archiv)*
 
 
 ## 1. Ziel des Projekts
@@ -218,7 +218,7 @@ Es folgen sämtliche Python-Scripte, die für diese Arbeit geschrieben wurden. D
 
 #### 2.6.1. Zeitungsartikel
 
-Das Repository enthält auch alle Zeitungsartikel, die in dieser Arbeit verwendet wurden. Diese wurden über die das Zeitungsportal ANNO der Österreichischen Nationalbank heruntergeladen[^fn10] und sind im Ordner ***[Zeitungsartikel](https://github.com/xeilian/schwabenkinder/tree/main/Zeitungsartikel)*** als JPGs abrufbar. Die Daten haben das Format *[Zeitungskürzel] Jahr-Monat-Tag, Seite*. Im folgenden befindet sich der Schlüssel der Zeitungskürzel:
+Das Repository enthält auch alle Zeitungsartikel, die in dieser Arbeit verwendet wurden. Diese wurden über die das Zeitungsportal ANNO der Österreichischen Nationalbibliothek heruntergeladen[^fn10] und sind im Ordner ***[Zeitungsartikel](https://github.com/xeilian/schwabenkinder/tree/main/Zeitungsartikel)*** als JPGs abrufbar. Die Daten haben das Format *[Zeitungskürzel] Jahr-Monat-Tag, Seite*. Im folgenden befindet sich der Schlüssel der Zeitungskürzel:
 | Zeitungskürzel | Name der Zeitung |
 | -- | -- |
 | BTV | Bote für Tirol und Vorarlberg |
